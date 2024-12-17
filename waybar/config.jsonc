@@ -1,0 +1,124 @@
+{
+    // Layout
+    "layer": "top",
+    "width": 1902, //ajust in your screen
+    "margin-top": 4, //ajust in your screen
+    "margn-bottom": 0, //ajust in your screen
+    "reload_style_on_change": true,
+
+    // Modules layout
+    "modules-left": ["custom/launcher","cpu","memory","cava"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "backlight","battery","clock","tray"],
+    
+    // Modules
+    "pulseaudio": {
+        "tooltip": false,
+        "scroll-step": 2,
+        "format": "{icon} {volume}%",
+        "format-muted": " {volume}%",
+        "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "format-icons": {
+            "default": [
+                "<span color='#ffffff'> </span>", 
+                "<span color='#ffffff'> </span>", 
+                "<span color='#ffffff'> </span>"
+            ]
+        }
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "on-click": "activate",
+        "all-outputs": true,
+        "active-only": false,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        },
+        "format": "{icon}",
+        "format-icons": {
+            "active": "<span font='11'></span>",
+            "empty": "<span font='11'></span>",
+            "persistent": "<span font='11'></span>"
+        }
+    },
+
+    "backlight": {
+        "tooltip": false,
+        "format": "󰖨 <span color='#ffffff'>{}%</span>",
+        "interval":1,
+        "on-scroll-up": "brightnessctl s 2%+",
+        "on-scroll-down": "brightnessctl s 2%-"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 10,
+            "interval":1
+        },
+        "format": "{icon}  <span color='#ffffff'>{capacity}%</span>",
+        "format-charging": "<span color='#ffffff'></span> <span color='#F1F1F1'>{capacity}%</span>",
+        "format-plugged": " <span color='#ffffff'>{capacity}</span>%",
+        "format-icons": [
+            "<span color='#f7768e'></span>", 
+            "<span color='#ffffff'></span>", 
+            "<span color='#ffffff'></span>", 
+            "<span color='#ffffff'></span>", 
+            "<span color='#ffffff'></span>"
+        ]
+    },
+
+    "clock": {
+        "tooltip": true,
+        "interval": 60,
+        "format": "<span color='#ffffff'>󰥔 </span>{:%H:%M %p   %d-%m}"
+    },
+
+    "cpu": {
+        "interval": 15,
+        "format": "<span color='#ffffff'> </span> {}%",
+        "max-length": 10
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "<span color='#ffffff'> </span> {used}G",
+        "max-length": 10
+    },
+
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "$HOME/.config/rofi/launcher.sh",
+        "on-click-right": "killall rofi"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 5
+    },
+
+    "cava": {
+        "cava_config": "$HOME/.config/cava/config",
+        "framerate": 144,
+        "autosens": 20,
+        "bars": 9,
+        "method": "pipewire",
+        "source": "auto",
+        "bar_delimiter": 0,
+        "input_delay": 2,
+        "sleep_timer": 0,
+        "hide_on_silence": true,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
+    }
+}
