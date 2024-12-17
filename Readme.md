@@ -1,10 +1,7 @@
 # Hyprland-Dotfiles
 
-[Video](https://github.com/59-59/Hyprland-Dotfiles/raw/refs/heads/main/assets/hyprland.mp4)
+<video src="https://github.com/user-attachments/assets/18aeceef-addf-48a2-af4f-e7227231c020" width="720" height="352"></video>
 
-<video width="600" controls>
-  <source src="https://github.com/59-59/Hyprland-Dotfiles/raw/refs/heads/main/assets/hyprland.mp4" type="video/mp4">
-</video>
 
 # Programs
 - Waybar-cava [AUR](https://aur.archlinux.org/packages/waybar-cava)
