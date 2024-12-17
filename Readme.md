@@ -1,9 +1,9 @@
 # Hyprland-Dotfiles
 
-[Video](./assets/video.mp4)
+[Video](https://github.com/59-59/Hyprland-Dotfiles/raw/refs/heads/main/assets/hyprland.mp4)
 
 <video width="600" controls>
-  <source src="./assets/video.mp4" type="video/mp4">
+  <source src="https://github.com/59-59/Hyprland-Dotfiles/raw/refs/heads/main/assets/hyprland.mp4" type="video/mp4">
 </video>
 
 # Programs
