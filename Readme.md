@@ -1,6 +1,6 @@
 # Hyprland-Dotfiles
 
-
+[Video](./assets/video.mp4)
 
 # Programs
 - Waybar-cava [AUR](https://aur.archlinux.org/packages/waybar-cava)
