@@ -1,0 +1,232 @@
+* {
+    border: none;
+    border-radius: 8px;
+    font-family: "JetbrainsMono Nerd Font";
+    font-size: 15px;
+    min-height: 10px;
+}
+
+window {}
+
+window#waybar {
+    border-radius: 8;
+    margin-top: 2px;
+    background: linear-gradient(90deg, #443A6B, #554B7D, #62578F, #554B7D, #443A6B);
+    background-size: 300% 300%;
+    animation: movingGradient 5s linear infinite;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+@keyframes movingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 300% 50%;
+    }
+}
+
+#window {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    transition: none;
+    color: transparent;
+    background: transparent;
+    opacity: 0.2;
+}
+
+#workspaces {
+    margin: 3px;  
+    padding: 0px;
+}
+
+#workspaces button {
+    transition: none;
+    background: transparent;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 2px;
+}
+
+#workspaces button.persistent {
+    transition: none;
+    color: #B3AAF0;
+    background: transparent;
+    font-size: 11;
+}
+
+#workspaces button.empty {
+    color: #16173B;
+    font-size: 2px;
+    transition: none;
+    background: transparent;
+}
+
+#workspaces button.active {
+    transition: none;
+    color: #F1F1F1;
+    background: transparent;
+    font-size: 11;
+}
+
+#workspaces button:hover {
+    box-shadow: none;
+}
+
+#pulseaudio {
+    margin-top: 2px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    font-size: 11;
+    font-weight: bold;
+    transition: none;
+    color: #F1F1F1;
+    background: #16173B;
+}
+
+#battery {
+    margin-top: 2px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    transition: none;
+    font-size: 11;
+    font-weight: bold;
+    color: #F1F1F1;
+    background: #16173B;
+}
+
+#battery.charging, #battery.plugged {
+    margin-top: 2px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    transition: none;
+    font-size: 11;
+    font-weight: bold;
+    background: #16173B;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #F1F1F1;
+    color: #161320;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #16173B;
+    }
+}
+
+#backlight {
+    margin-top: 2px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    transition: none;
+    font-size: 11;
+    font-weight: bold;
+    color: #F1F1F1;
+    background: #16173B;
+}
+
+#clock {
+    margin-top: 2px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    transition: none;
+    font-size: 11;
+    font-weight: bold;
+    color: #F1F1F1;
+    background: #16173B;
+}
+
+#memory {
+    margin: 6px 0px 6px 8px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    font-size: 11;
+    font-weight: bold;
+    transition: none;
+    color: #F1F1F1;
+    background: #16173B;
+}
+
+#cpu {
+    margin-top: 2px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 2px;
+    padding-right: 10px;
+    border-radius: 8px;
+    font-size: 11;
+    font-weight: bold;
+    transition: none;
+    color: #F1F1F1;
+    background: #16173B;
+}
+
+#tray {
+    margin-top: 2px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 2px;
+    padding-right: 10px;
+    border-radius: 8px;
+    transition: none;
+    color: #F1F1F1;
+    background: #16173B;
+}
+
+#custom-launcher {
+    font-size: 18;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 8px;
+    transition: none;
+    color: #F1F1F1;
+    background: transparent;
+}
+
+#cava {
+    font-size: 13;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 8px;
+    transition: none;
+    color: #F1F1F1;
+    background: transparent;  
+}
+
+#tray {
+    opacity: 1;
+    border-radius: 8px;
+}%                                                                                                                                                                                                           
